@@ -13,3 +13,7 @@ function myFunction() {
 function func1() {
   location.href = 'https://wate02.github.io/games';
 }
+
+function func2() {
+  location.href = 'https://wate02.github.io/Soundboard';
+}
