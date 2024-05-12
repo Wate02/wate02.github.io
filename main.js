@@ -17,3 +17,7 @@ function func1() {
 function func2() {
   location.href = 'https://wate02.github.io/Soundboard';
 }
+
+function about() {
+  location.href = 'https://wate02.github.io/about';
+}
