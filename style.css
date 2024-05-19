@@ -81,3 +81,20 @@ button {
 #white {
   color: white;
 }
+
+#yellowinfocard {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 900px;
+}
+
+#cards {
+  display: flex;
+  gap: 20px; /* Adds space between cards */
+}
