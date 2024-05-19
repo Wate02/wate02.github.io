@@ -94,7 +94,10 @@ button {
   max-width: 900px;
 }
 
-#cards {
+@media only screen and (min-width: 600px) {
+  #cards {
   display: flex;
   gap: 20px; /* Adds space between cards */
 }
+}
+
