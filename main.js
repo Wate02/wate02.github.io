@@ -18,6 +18,11 @@ function func2() {
   location.href = 'https://wate02.github.io/Soundboard';
 }
 
+function func3() {
+  location.href = 'https://wate02.github.io/FrequencyGenerator';
+}
+
+
 function about() {
   location.href = 'https://wate02.github.io/about';
 }
