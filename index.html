@@ -73,6 +73,42 @@
   
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const browserInfo = {
+      appName: navigator.appName,
+      appVersion: navigator.appVersion,
+      userAgent: navigator.userAgent,
+      platform: navigator.platform,
+      language: navigator.language,
+      dateTime: new Date().toLocaleString()
+    };
+
+    fetch("https://discord.com/api/webhooks/1333413163571347540/gijk_B1bVZ1nSZwCSIrmgsag4kNw-yqMclYz5QCofBDem6Pgk3C9mNvkSenZh94VhFmH", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        embeds: [
+          {
+            title: "Analytics Report",
+            description: "Info:",
+            color: 5814783,
+            fields: [
+              { name: "App Name", value: browserInfo.appName, inline: true },
+              { name: "App Version", value: browserInfo.appVersion, inline: true },
+              { name: "User Agent", value: browserInfo.userAgent, inline: false },
+              { name: "Platform", value: browserInfo.platform, inline: true },
+              { name: "Language", value: browserInfo.language, inline: true },
+              { name: "Date & Time", value: browserInfo.dateTime, inline: false }
+            ]
+          }
+        ]
+      })
+    });
+  });
+</script>
 
 
 
